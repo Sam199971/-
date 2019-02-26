@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #myInput {
+            width: 100%;
+            font-size: 30px;
+            padding: 12px 20px 12px 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+        }
+        #myTable {
+            border-collapse: collapse;
+            margin: auto;
+            width: 100%;
+            font-size: 30px;
+        }
+        #myTable th, #myTable td {
+            text-align: center;
+            padding: 12px;
+        }
+        #myTable tr.header, #myTable tr:hover {
+            background-color: #FF6D10;
+        }
+        .center {
+            margin: auto;
+            width: 40%;
+            padding: 10px;
+            font-size: 30px;
+        }
+        body {
+            background-color: #262626;
+            color: #ffffff
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+    </style>
+    <title>Egg</title>
+</head>
+<body>
+
+<div class="center">
+    <h1>Mr.Egg</h1>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+
+    <table id="myTable">
+        <tr class="header">
+            <th style="width:100%;">Name</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://sam199971.github.io/Websit/home.html">home</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://sam199971.github.io/Websit/W1.html">w1</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://sam199971.github.io/Websit/W1.html">w2</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<script>
+    function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
