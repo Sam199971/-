@@ -17,6 +17,8 @@
             padding:20px;
             text-align: center;
             font-size: 50px;
+            color:white;
+            
         }
         nav {
             display: flex;
@@ -30,17 +32,13 @@
             text-align: center;
             font-size: 30px;
             padding: 20px;
-
-        }
-        section{
-            padding: 20px;
         }
         #s1 {
             display: flex;
         }
         #s1 article {
+            color:rgb(72, 23, 117);
             flex:2;
-            padding: 0;
         }
         #s1 aside{
             flex: 1;
@@ -48,6 +46,9 @@
         }
         .aside_img {
             width: 80%;
+        }
+        table{
+            padding:20px;
         }
     </style>
 </head>
@@ -63,35 +64,32 @@
         <div><a href="https://www.instagram.com/s88070171/">instagram</a></div>
     </nav>
 
-    <div class="main">
+    <section id="s1">
+        <article>
+            <h3>基本資料</h3>
+            <p>出生於基隆，現住在士林區，就讀淡江大學，今年19歲，身高170，這隻貓叫做毛毛，很可愛八</p>
+            <h3>個性</h3>
+            <ol type="I">
+                <li>樂於助人</li>
+                <li>活潑開朗</li>
+                <li>富有同情心</li>
+            </ol>
+        </article>
+        <aside>
+            <img class="aside_img" src="https://stickershop.line-scdn.net/stickershop/v1/sticker/27086877/android/sticker.png"
+                alt="404 Not Found">
+        </aside>
 
-        <section id="s1">
-            <article>
-                <h3>基本資料</h3>
-                <p>出生於基隆，現住在士林區，就讀淡江大學，今年19歲，身高170</p>
-                <h3>個性</h3>
-                <ol type="I">
-                    <li>樂於助人</li>
-                    <li>活潑開朗</li>
-                    <li>富有同情心</li>
-                </ol>
-            </article>
-            <aside>
-                <img class="aside_img"
-                     src="https://stickershop.line-scdn.net/stickershop/v1/sticker/27086877/android/sticker.png"
-                     alt="404 Not Found">
-            </aside>
-
-        </section>
+    </section>
 
 
-        <section>
-            <table border="3">
-                <colgroup>
-                    <!--群組化-->
-                    <row style="background-color: darkgoldenrod">
-                </colgroup>
-                <thead>
+    <section>
+        <table border="3">
+            <colgroup>
+                <!--群組化-->
+                <row style="background-color: darkgoldenrod">
+            </colgroup>
+            <thead>
                 <tr>
                     <th>
                         <h3>課表</h3>
@@ -102,96 +100,96 @@
                     <th>四</th>
                     <th>五</th>
                 </tr>
-                </thead>
-                <tr>
-                    <td>1</td>
-                    <td>空</td>
-                    <td>空</td>
-                    <td>空</td>
-                    <td>計算機組織實習課</td>
-                    <td>空</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>機率</td>
-                    <td>機率實習課</td>
-                    <td>專題實驗(一)</td>
-                    <td>計算機組織</td>
-                    <td>空</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>機率</td>
-                    <td>計算機組織</td>
-                    <td>專題實驗(一)</td>
-                    <td>線性代數</td>
-                    <td>環境未來</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>機率</td>
-                    <td>計算機組織</td>
-                    <td>專題實驗(一)</td>
-                    <td>線性代數</td>
-                    <td>環境未來</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>空</td>
-                    <td>空</td>
-                    <td>空</td>
-                    <td>空</td>
-                    <td>空</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>商業智慧分析</td>
-                    <td>財富管理</td>
-                    <td>空</td>
-                    <td>通識(py)</td>
-                    <td>英文(二)</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>商業智慧分析</td>
-                    <td>財富管理</td>
-                    <td>行動裝置程式設計</td>
-                    <td>通識(py)</td>
-                    <td>英文(二)</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>空</td>
-                    <td>不動產投資與經營</td>
-                    <td>行動裝置程式設計</td>
-                    <td>行動裝置程式設計</td>
-                    <td>空</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>體重控制</td>
-                    <td>不動產投資與經營</td>
-                    <td>線性代數</td>
-                    <td>行動裝置程式設計</td>
-                    <td>空</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>體重控制</td>
-                    <td>空</td>
-                    <td>線性代數實習課</td>
-                    <td>空</td>
-                    <td>空</td>
-                </tr>
-                <tfoot>
+            </thead>
+            <tr>
+                <td>1</td>
+                <td>空</td>
+                <td>空</td>
+                <td>空</td>
+                <td>計算機組織實習課</td>
+                <td>空</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>機率</td>
+                <td>機率實習課</td>
+                <td>專題實驗(一)</td>
+                <td>計算機組織</td>
+                <td>空</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>機率</td>
+                <td>計算機組織</td>
+                <td>專題實驗(一)</td>
+                <td>線性代數</td>
+                <td>環境未來</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>機率</td>
+                <td>計算機組織</td>
+                <td>專題實驗(一)</td>
+                <td>線性代數</td>
+                <td>環境未來</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>空</td>
+                <td>空</td>
+                <td>空</td>
+                <td>空</td>
+                <td>空</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>商業智慧分析</td>
+                <td>財富管理</td>
+                <td>空</td>
+                <td>通識(py)</td>
+                <td>英文(二)</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>商業智慧分析</td>
+                <td>財富管理</td>
+                <td>行動裝置程式設計</td>
+                <td>通識(py)</td>
+                <td>英文(二)</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>空</td>
+                <td>不動產投資與經營</td>
+                <td>行動裝置程式設計</td>
+                <td>行動裝置程式設計</td>
+                <td>空</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>體重控制</td>
+                <td>不動產投資與經營</td>
+                <td>線性代數</td>
+                <td>行動裝置程式設計</td>
+                <td>空</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>體重控制</td>
+                <td>空</td>
+                <td>線性代數實習課</td>
+                <td>空</td>
+                <td>空</td>
+            </tr>
+            <tfoot>
                 <tr>
                     <td colspan="6">大二下</td>
                 </tr>
-                </tfoot>
-            </table>
-        </section>
-    </div>
-    
+            </tfoot>
+        </table>
+    </section>
+
+
 
 
     <footer>
