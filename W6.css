@@ -1,0 +1,28 @@
+
+body{
+    width:100%;
+}
+
+
+#header{
+    margin:20px;
+    border: 20px solid red;
+    border-radius: 5px;
+    padding:20px;
+    
+}
+
+#nuv{
+    height: 40px;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%)
+}
+
+#section{
+    display: flex;
+}
+.article{
+    flex:1;
+}
+.aside{
+    flex:2;
+}
