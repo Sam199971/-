@@ -6,9 +6,9 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin:0px;
-  border-left:200px solid rgb(224, 25, 25);
+  border-left:200px solid rgb(243, 6, 6);
 
-  border-right:200px solid rgb(224, 25, 25);
+  border-right:200px solid rgb(243, 6, 6);
 }
 
 .name {
@@ -63,4 +63,48 @@ a:hover, a:active {
   text-shadow: 3px 2px red;
   font-size: 50px;
   background-color: black;
+}
+
+
+@media only screen and (min-width: 400px) {
+  body{
+    border-color: rgb(7, 0, 0);
+  }
+  .name {
+    text-align: center;
+    font-size:60px;
+    padding:50px;
+    background-color: white;
+    color: black;
+    border: 50px solid black;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  body{
+    border-color: rgb(133, 10, 10);
+  }
+  .name {
+    text-align: center;
+    font-size:60px;
+    padding:50px;
+    background-color: black;
+    color: white;
+    border: 50px solid white;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  body{
+    border-color: rgb(238, 14, 14);
+  }
+    .name {
+      text-align: center;
+      font-size:60px;
+      padding:50px;
+      background-color: white;
+      color: black;
+      border: 50px solid black;
+    }
 }
