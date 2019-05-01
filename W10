@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        W10
+    </title>
+</head>
+
+<body>
+    <p id="aa"></p>
+    <p id="bb"></p>
+    <p id="cc"></p>
+    <p id="dd"></p>
+    <p id="ee"></p>
+    <script>
+        var x = 10,
+            y = 20;
+        var a = x + y,
+            b = x - y,
+            c = x * y,
+            d = y / x,
+            e = y % x;
+
+        document.getElementById("aa").innerHTML = a + "<br>" + b + "<br>" + c + "<br>" + d + "<br>" + e;
+        /*document.getElementById("aa").innerHTML = a + b+1;*/
+    </script>
+     
+    <script>
+        var x = 1,y = 5;
+        var a = x + ++y, b = x + y++;
+        document.getElementById("bb").innerHTML = y + "<br>" + a + "<br>" + b + "<br>" + y;
+
+    </script>
+
+    <script>
+        var  a = 101010, b = 3;
+        document.getElementById("cc").innerHTML = a << b;
+    </script>
+
+    <script>
+        var k = Math.random();
+        document.getElementById("dd").innerHTML = "number is :" + k;
+        if(k > 0.5){
+            document.getElementById("ee").innerHTML = "number is bigger then 0.5";
+        }else{
+            document.getElementById("ee").innerHTML = "fuck off";
+        }
+    </script>
+
+</body>
+
+</html>
