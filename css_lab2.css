@@ -28,22 +28,29 @@ td {
     border: 20px solid rgb(0, 0, 0);
     font-size: 20px;
 }
+td,iframe{
+    height: 100%;
+    width: 100%;
+}
 
 thead {
     background-color: crimson;
 }
 
-table,
-img {
+table,img {
     height: auto;
     width: 100%;
+}
+
+.a-link a {
+    width: 100%;
+    font-size: 50px; 
 }
 
 a:link,
 a:visited {
     background-color: black;
     color: white;
-    padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -55,12 +62,12 @@ a:active {
 }
 
 .link1 {
-    font-size: 58px;
+    font-size: 100%;
 
 }
 
 .link2 {
-    font-size: 60px;
+    font-size: 100%;
 }
 
 .footer {
@@ -70,41 +77,7 @@ a:active {
     background-color: black;
 }
 
-
-@media only screen and (min-width: 400px) {
-    body {
-        border-color: rgb(0, 0, 0);
-        border-left: 10px solid rgba(0, 0, 0);
-        border-right: 10px solid rgb(0, 0, 0);
-    }
-
-    .name {
-        text-align: center;
-        font-size: 60px;
-        background-color: white;
-        color: black;
-        border: 50px solid black;
-    }
-}
-
-@media only screen and (min-width: 800px) {
-    body {
-        border-color: rgb(133, 10, 10);
-        border-left: 200px solid rgb(133, 10, 10);
-        border-right: 200px solid rgb(133, 10, 10);
-    }
-
-    .name {
-        text-align: center;
-        font-size: 60px;
-        background-color: black;
-        color: white;
-        border: 50px solid white;
-    }
-}
-
-
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     body {
         border-color: rgb(238, 14, 14);
         border-left: 200px solid rgb(238, 14, 14);
@@ -119,3 +92,67 @@ a:active {
         border: 50px solid black;
     }
 }
+
+
+@media only screen and (max-width: 890px) {
+    body {
+        border-color:  rgb(165, 5, 5);
+        border-left: 50px solid rgb(165, 5, 5);
+        border-right: 50px solid rgb(165, 5, 5);
+    }
+
+    th,td {
+        border: 5px solid rgb(0, 0, 0);
+        font-size: 20px;
+    }
+
+    .name {
+        text-align: center;
+        font-size: 60px;
+        background-color: black;
+        color: white;
+        border: 50px solid white;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    body {
+        border-color:  rgb(165, 5, 5);
+        border-left: 10px solid rgb(165, 5, 5);
+        border-right: 10px solid rgb(165, 5, 5);
+    }
+    table ,th,td{
+        font-size: 12px;
+    }
+
+    .a-link a {
+        width: 100%;
+        font-size: 30px; 
+    }
+
+}
+
+
+
+/*    body {
+        border: 0px;
+    }
+    table,
+    th,
+    td {
+        table-layout: fixed;
+        width: 100%;
+        text-align: center;
+        border: 0px solid rgb(0, 0, 0);
+        font-size: auto;
+    }
+
+    
+
+    .name {
+        text-align: center;
+        font-size: 60px;
+        background-color: white;
+        color: black;
+        border: 50px solid black;
+    }*/
