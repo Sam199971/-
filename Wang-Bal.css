@@ -1,0 +1,21 @@
+.Wang-head{
+    background-image: "http://www.olbook.com.tw/imagelib4/039.jpg";
+}
+.curtain{
+    width:100px;
+    height:100px; 
+    animation:curtain-open;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes curtain-open{
+    from{
+        width:100px;
+    }50%{
+        width:30px;
+    }to{
+        width:100px;
+    }
+}
