@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        W11
+    </title>
+    <link rel="stylesheet" type="text/css" href="W11.css">
+</head>
+
+<body>
+    <p id = "1"></p>
+    <p id = "2"></p>
+    <p id = "3"></p>
+    <p id = "4"></p>
+    <p id = "5"></p>
+    <script>
+        var today_day = new Date().getDay();
+        switch(today_day){
+            case 3:document.getElementById("1").innerHTML = "今天星期" + today_day ; break;
+            case 4:document.getElementById("1").innerHTML = "今天星期4"; break;
+            case 5:document.getElementById("1").innerHTML = "今天星期5"; break;
+            default: document.getElementById("1").innerHTML = "今天不是3也不是4也不是5"; break;
+        }
+    </script>
+    
+    <script>
+        var sum = 0;
+        var text = "";
+        for(var i = 0; i < 11 ; i++){
+            sum += i ;
+            text += "loop: " + i +" sum: " + sum + "<br>";
+        }
+        document.getElementById("2").innerHTML = text;
+    </script>
+
+    <script>
+        var sum = 0;
+        var text = "";
+        var j = 1;
+        for(var i = 100; i > 0; i--){
+            sum += i;
+            text += "loop: " + j++ +" sum: " + sum + "<br>";
+            
+        }
+        document.getElementById("3").innerHTML = text;
+    </script>
+
+    <script>
+        var jojo = "";
+        for(i = 0; i < 9; i++){
+            for(j = 0; j < 9; j++){
+                jojo += (i+1) + " * " + (j+1) + " = " + (i+1)*(j+1) ;
+            }
+            jojo += "<br>"
+        }
+        document.getElementById("4").innerHTML  = jojo;
+    
+    </script>
+
+    <script>
+        var jojo = "";
+        var i = 0;
+        while( i < 9){
+            var j = 0;
+            while(j < 9){
+                jojo += (i+1) + " * " + (j+1) + " = " + (i+1)*(j+1) + "        " ;
+                j++;
+            }
+            jojo += "<br>"
+            i++;
+        }
+        document.getElementById("5").innerHTML  = jojo;
+    </script>
+</body>
+
+</html>
