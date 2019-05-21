@@ -11,6 +11,9 @@ html {
 body {
     height: 100%;
     margin: 0%;
+    background-image: url("./background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .roof {
@@ -89,6 +92,8 @@ a img{
 }
 
 .wall{
+    z-index: -999;
+    position: relative;
     height: 100%;
     width:100%;
 
