@@ -9,37 +9,53 @@
 </head>
 
 <body>
-    
-    <div class="floor">
-    
+
+    <div class="header">
+
         <div class="roof">
 
-            <div class = "wang-head"><img src="./roof.png"></div>
+            <img src="./nobackroof.png">
 
             <div class="curtain">
-                <img class="curtain1"
-                    src="./curtain.png">
-                <img class="curtain2"
-                    src="./curtain.png">
+                <img class="curtain1" src="./curtain.png">
+                <img class="curtain2" src="./curtain.png">
             </div>
 
         </div>
 
 
         <div class="top_floor">
-            
+
             <div class="aside">
+
+                <div class="background"><img src="./wall-1.png"></div>
+
                 <div class="container">
-                    <a href="#"><img src="./l-window_1.png"></a>
+
+                    <!-- <a href="#"><img src="./l-window_1.png"></a> -->
+                    <button onclick="changeToAbout()" id="about"><img src="./l-window_1.png"></button>
+
                 </div>
+
             </div>
 
-            <div class="main">a</div>
+            <div class="main">
+
+                <img src="./wall-1.png">
+
+                <div><a href="#floor1">基本資料</a> </div>
+                <div><a href="#floor2">第二樓</a></div>
+                <div><a href="#floor2">第三樓</a></div>
+            </div>
 
             <div class="aside">
+
+                <div class="background"><img src="./wall-1.png"></div>
+
                 <div class="container">
-                    <a href="#"><img src="./r-window_1.png"></a>
+                    <button onclick="changeToAbout()" id="about"><img src="./l-window_1.png"></button>
                 </div>
+
             </div>
 
         </div>
@@ -49,12 +65,43 @@
     </div>
 
 
-    <div class = "floor">
+    <div class="floor" id="floor1">
 
-
-    <div  class = "wang-head" ><img src = "./background.jpg"></div>
+        <div class="background"><img src="./wall-1.png"></div>
 
     </div>
+
+    <div class="floor" id="floor2">
+
+        <div class="background"><img src="./wall-1.png"></div>
+
+    </div>
+
+
+    <div class="footer">
+
+        <div class="background"><img src="./left-root.jpg"></div>
+
+
+
+        <div class="main">
+
+            <img src="./main-root.jpg">
+
+        </div>
+
+
+
+        <div class="background"><img src="./right-root.jpg"></div>
+
+
+
+
+    </div>
+
+  
+
+
 
 </body>
 

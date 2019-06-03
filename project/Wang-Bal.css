@@ -1,52 +1,55 @@
-*{
+* {
     box-sizing: border-box;
-    
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 body {
-    margin: 0%;
+    margin: 0;
+    background-color: aqua;
 }
 
-.floor{
+.header {
     height: 100vh;
-    width: 70vw;
+    width: auto;
     margin-left: 15%;
     margin-right: 15%;
 }
 
-.floor .roof {
+.header .roof {
+    display: flow-root;
     width: 100%;
     height: 40%;
 }
-.floor .top_floor{
+
+.header .top_floor {
     width: 100%;
     height: 60%;
 }
 
-.roof .wang-head{
+.roof img {
     height: 100%;
     width: 100%;
 }
 
-.wang-head img{
-    height: 100%;
-    width: 100%;
-}
+
 
 
 
 .roof .curtain {
-    position: absolute;
-    left: 40%;
-    top: 23.2% ;
     z-index: 2;
-    width: 22%;
-    height: 9.6%;
+    position: relative;
+    display:flow-root;
+    left: 35.3%;
+    bottom: 42%;
+    width: 32%;
+    height: 22.5%;
+    margin: 0;
 }
 
 
-.curtain1 {
+.curtain .curtain1 {
     width: 50%;
     height: 100%;
     animation: curtain-open;
@@ -55,7 +58,7 @@ body {
     animation-iteration-count: infinite;
 }
 
-.curtain2 {
+.curtain .curtain2 {
     float: right;
     width: 50%;
     height: 100%;
@@ -80,34 +83,101 @@ body {
 
 
 
-.main{
+
+.main {
+    display: flex;
     flex: 3;
-}   
-
-.aside{
-   flex:1;
-   background: brown;
-   display: flex;
-   align-items: center;
-   
+    flex-direction: column;
 }
-.container{
-   height: 40%;
-   width: 100%;
-}
+  
 
-.container a{
-   width: 100%;
-} 
 
-a img{
-   width: 100%;
-   height: 100%;
+.main div{
+    padding: 10% 0;
+    z-index: 999;
+    position: relative;
+    display: table;
+    bottom: 100%;
+    height: 33.33%;
+    width: 100%;
+    /* margin: 5% 10%; */
+    text-align: center;
+    /* line-height: 200%; */
+    font-size: 200%;
 }
 
+.main img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.aside {
+    flex: 1;
+    background: brown;
+
+}
+
+.aside .container {
+    z-index: 999;
+    position: relative;
+    bottom: 70%;
+    height: 40%;
+    width: 100%;
+}
+
+
+.container button {
+    height: 100%;
+    width: 100%;
+}
+
+button img {
+    width: 100%;
+    height: 100%;
+}
 
 
 
+
+.aside .background {
+    z-index: 6;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+.floor {
+    height: 100vh;
+    width: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.floor .background {
+    height: 100%;
+    width: 100%;
+}
+
+.footer{
+    height: 100vh;
+    width: auto;
+    display: flex;
+}
+
+.footer .background{
+    flex: 1;
+}
+.footer .main{
+    flex:4.62;
+}
+
+
+.background img{
+    height: 100%;
+    width: 100%;
+}
 
 
 @keyframes curtain-open {
@@ -132,5 +202,5 @@ a img{
     }
 
 
-    
+
 }
