@@ -147,23 +147,29 @@
         <div id="paper" class="content">
                 <div id="paperone">
                     <div class="topic">期刊&會議論文</div>
-                    <ul>
-                        <li>A methodology for proving termination of logic programs</li>
-                        <li>A Robust Method for AOI System Design</li>
-                        <li>A three-tier multimedia presentation system in internet</li>
-                        <li>Completeness of logic programs under megaton as failure</li>
-                        <li>An authoring tool for teaching materials on web-dynamic homepage approach using SMIL</li>
-                        <li>Using adjustable multimedia homepage design—A scheme to promote the effect of web CAI</li>
-                        <li>師生互動系統</li>
-                        <li>架構在Internet上的簡報系統</li>
-                        <li>Internet上的C之設計</li>
-                        <li>架構在Intemet上的簡報系統</li>
-                        <li>網路虛擬化組織之元件分割-以電子商務管理為實例</li>
-                        <li>使用COM/DCOM技術架構在Internet上之排課系統</li>
-                        <li>Internet上的排課系統之設計</li>
-                        <li>以物件導向方法描述網路電腦輔助教學模型例</li>
-                    </ul>
+                    <span id="dots">...</span>
+
+                    <span id="more">
+                        <ul>
+                            <li>A methodology for proving termination of logic programs</li>
+                            <li>A Robust Method for AOI System Design</li>
+                            <li>A three-tier multimedia presentation system in internet</li>
+                            <li>Completeness of logic programs under megaton as failure</li>
+                            <li>An authoring tool for teaching materials on web-dynamic homepage approach using SMIL</li>
+                            <li>Using adjustable multimedia homepage design—A scheme to promote the effect of web CAI</li>
+                            <li>師生互動系統</li>
+                            <li>架構在Internet上的簡報系統</li>
+                            <li>Internet上的C之設計</li>
+                            <li>架構在Intemet上的簡報系統</li>
+                            <li>網路虛擬化組織之元件分割-以電子商務管理為實例</li>
+                            <li>使用COM/DCOM技術架構在Internet上之排課系統</li>
+                            <li>Internet上的排課系統之設計</li>
+                            <li>以物件導向方法描述網路電腦輔助教學模型例</li> 
+                        </ul>
+                    </span> </br>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
                 </div>
+                
                 <div id="papertwo">
                     <div class="topic">專書單篇</div>
                     <ul>
@@ -223,13 +229,13 @@
 
     <div class="footer" id="floor6">
 
-        <div class="background footerback" ><img src="./left-root.jpg"></div>
+        <div class="background"><img src="./left-root.jpg"></div>
 
         <div class="main">
             <img src="./main-root.jpg">
         </div>
 
-        <div class="background footerback"><img src="./right-root.jpg"></div>
+        <div class="background"><img src="./right-root.jpg"></div>
 
     </div>
     
@@ -273,6 +279,28 @@
         }
         
     </script>
+
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+            var papertwo = document.getElementById("papertwo");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+                papertwo.style.display = "inline";
+            } else {
+                papertwo.style.display = "none";
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+            }
+        }
+    </script>   
+
 
 </body>
 

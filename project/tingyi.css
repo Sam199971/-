@@ -1,10 +1,6 @@
 * {
     box-sizing: border-box;
 }
-a{
-    text-decoration: none;
-    
-}
 html{
     scroll-behavior: smooth;
 }
@@ -226,12 +222,13 @@ button img {
 .content{
     position: absolute;
     z-index: 2;
+    width: 55%;
+    height: 80%;
 }
 
 #basic_information{
     top: 110vh;
     left: 22vw;
-
 }
 
 #basic_information table{
@@ -280,12 +277,12 @@ button img {
     left: 22vw;
 }
 #paperone{
-    width: 55vw;
+    width: 100%;
     height: 58vh;
 }
 
 #papertwo{
-    width: 55vw;
+    width: 100%;
 }
 
 
@@ -303,11 +300,12 @@ button img {
     height: 59vh;
 }
 
+
 @media only screen and (max-width: 480px){
     .floor ,.header {
         margin: 0;
     }
-    .footerback{
+    .footer .background{
         display: none;
     }
     body{
@@ -316,16 +314,55 @@ button img {
     .topic{
         font-size: 15px;
     }
-    #paperone{
-        overflow: auto;
-        height: 30vh;
-    }
-    #papertwo{
-        
-    }
-    #paper{
+    /* .content{
+        height: 80vh;
+        width: 80vw;
+        left: 10%;
+    } */
+
+    #basic_information{
+        height: 80vh;
+        width: 80vw;
+        left: 10%;
+    } 
+    #teach{
         height: 80vh;
         width: 80vw;
         left: 10%;
     }
+
+    #more{
+        display: none;
+    }
+
+
+    #paperone{
+        text-align: center;
+        height: 10vh;
+    }
+
+    #paper{
+        
+        height: 80vh;
+        width: 80vw;
+        left: 5%;
+    }
+    
+    .mybtn{
+        position:absolute;
+        height: 200vh;
+    }
+
+    #study{
+        height: 80vh;
+        width: 80vw;
+        left: 10%;
+    }
+     
+    #student{
+        height: 80vh;
+        width: 80vw;
+        left: 10%;
+    }
+    
 }
