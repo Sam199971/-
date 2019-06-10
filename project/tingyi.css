@@ -8,7 +8,7 @@ html{
 
 body {
     margin: 0;
-    background-color: aqua;
+    background-color: rgb(83,214,255);
 }
 marquee{
     position: absolute;
@@ -418,6 +418,9 @@ button img {
     }
                                                             /*6/5修改*/
     p{
+        font-size: 15px;
+    }
+    p a{
         font-size: 15px;
     }
     #powerby ,#footercontact{

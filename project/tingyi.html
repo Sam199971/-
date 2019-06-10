@@ -6,6 +6,8 @@
     <title>Wang Bal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=stylesheet type="text/css" href="./tingyi.css">
+    <script src="jquery.js"></script>
+    <script src="js.js"></script>
 </head>
 
 <body>
@@ -29,7 +31,7 @@
     <div class="header" id="header">
 
         <div class="roof">
-
+            
             <img src="./nobackroof.png">
 
             <div class="curtain">
@@ -57,7 +59,7 @@
             <div class="main">
 
                 <img src="./w3.jpg" id="mainimg">
-                <div><a href="#floor1" id="first">基本資料</a></div>
+                <div><a href="#floor1" id="first">關於汪柏</a></div>
                 <div><a href="#floor2" id="second">教學概況</a></div>
                 <div><a href="#floor6" id="third">聯絡</a></div>
             </div>
@@ -325,70 +327,6 @@
         <div class="background"><img src="./right-root.jpg"></div>
 
     </div>
-
-    <script src="jquery-3.4.1.js"></script>
-    <script>
-        var changeindex = 0;
-
-        $(document).ready(function () {
-            $("#about").click(function () {
-                $(".main").fadeOut(1000);
-                setTimeout(function () { $(".main").fadeIn("slow"); }, 999);
-            });
-        });
-
-        if (changeindex == 0) {
-            $(document).ready(function () {
-                $("#search").click(function () {
-                    $(".main").fadeOut(1000);
-                    setTimeout(function () { $(".main").fadeIn("slow"); }, 999);
-                });
-            });
-            changeindex--;
-        }
-
-        function changeToAbout() {
-            setTimeout(function () { document.getElementById("first").innerHTML = "基本資料"; }, 1000);
-            document.getElementById("first").href = "#floor1";
-            setTimeout(function () { document.getElementById("second").innerHTML = "教學概況"; }, 1000);
-            document.getElementById("second").href = "#floor2";
-            setTimeout(function () { document.getElementById("third").innerHTML = "聯絡"; }, 1000);
-            document.getElementById("third").href = "#floor6";
-            setTimeout(function () { document.getElementById("mainimg").src = "./w3.jpg"; }, 1000);
-        }
-        function changeToSearch() {
-            setTimeout(function () { document.getElementById("first").innerHTML = "論文著作"; }, 1000);
-            document.getElementById("first").href = "#floor3";
-            setTimeout(function () { document.getElementById("second").innerHTML = "研習活動"; }, 1000);
-            document.getElementById("second").href = "#floor4";
-            setTimeout(function () { document.getElementById("third").innerHTML = "指導學生"; }, 1000);
-            document.getElementById("third").href = "#floor5";
-            setTimeout(function () { document.getElementById("mainimg").src = "./wall-1.png"; }, 1000);
-        }
-
-    </script>
-
-    <script>
-        function myFunction() {
-            var dots = document.getElementById("dots");
-            var moreText = document.getElementById("more");
-            var btnText = document.getElementById("myBtn");
-            var papertwo = document.getElementById("papertwo");
-            if (dots.style.display === "none") {
-                dots.style.display = "inline";
-                btnText.innerHTML = "Read more";
-                moreText.style.display = "none";
-                papertwo.style.display = "inline";
-            } else {
-                papertwo.style.display = "none";
-                dots.style.display = "none";
-                btnText.innerHTML = "Read less";
-                moreText.style.display = "inline";
-            }
-        }
-    </script>
-
-
 </body>
 
 </html>
