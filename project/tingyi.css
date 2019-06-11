@@ -40,7 +40,7 @@ marquee{
 }
 .header {
     height: 100vh;
-    width: auto;
+    width: 70%;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -66,7 +66,7 @@ marquee{
 .roof .curtain {
     width: 32%;
     height: 22.5%;
-    z-index: 999999;
+    z-index: 3;
     position: relative;
 
     float: right;
@@ -152,7 +152,7 @@ marquee{
 }
 
 .aside .container {
-    z-index: 999;
+    z-index: 3;
     position: relative;
     bottom: 70%;
     height: 40%;
@@ -187,7 +187,7 @@ button img {
 
 .floor {
     height: 100vh;
-    width: auto;
+    width: 70%;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -209,7 +209,7 @@ button img {
 
 .footer{
     height: 100vh;
-    width: auto;
+    width: 100%;
     display: flex;
 }
 
@@ -366,6 +366,7 @@ button img {
 @media only screen and (max-width: 480px){
     .floor ,  .header {
         margin: 0;
+        width: 100%
     }
     .footer .background{
         display: none;
