@@ -1,23 +1,16 @@
 
-
-    var changeindex = 0;
-
     $(document).ready(function () {
         $("#about").click(function () {
             $(".main").fadeOut(1000);
-            setTimeout(function () { $(".main").fadeIn("slow"); }, 999);
+            setTimeout(function () { $(".main").fadeIn(1000); }, 999);
+        });
+        $("#search").click(function () {
+            $(".main").fadeOut(1000);
+            setTimeout(function () { $(".main").fadeIn(1000); }, 1000);
         });
     });
 
-    if (changeindex == 0) {
-        $(document).ready(function () {
-            $("#search").click(function () {
-                $(".main").fadeOut(1000);
-                setTimeout(function () { $(".main").fadeIn("slow"); }, 1000);
-            });
-        });
-        changeindex--;
-    }
+    
 
     function changeToAbout() {
         setTimeout(function () { document.getElementById("first").innerHTML = "關於汪柏"; }, 1000);
@@ -44,14 +37,14 @@
         var btnText = document.getElementById("myBtn");
         var papertwo = document.getElementById("papertwo");
         if (dots.style.display === "none") {
-            dots.style.display = "inline";
+            dots.style.display = "initial";
             btnText.innerHTML = "Read more";
             moreText.style.display = "none";
-            papertwo.style.display = "inline";
+            papertwo.style.display = "initial";
         } else {
             papertwo.style.display = "none";
             dots.style.display = "none";
             btnText.innerHTML = "Read less";
-            moreText.style.display = "inline";
+            moreText.style.display = "initial";
         }
     }
